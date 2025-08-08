@@ -1,85 +1,141 @@
-Got it, Amelia! Here's the updated HTML with:
-
-Sky blue background for the whole page
-
-Black text color for normal text
-
-Header with white text on a darker blue background
-
-Email link in blue and clickable
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Reclaim Life Foundation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #87ceeb; /* sky blue */
-            color: black; /* black text */
-            margin: 20px;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #0055a5; /* darker blue */
-            color: white; /* white text */
-            text-align: center;
-            padding: 20px 0;
-            margin-bottom: 30px;
-            border-radius: 8px;
-        }
-        h1 {
-            margin: 0;
-            font-weight: bold;
-        }
-        section h2 {
-            color: #003366; /* a strong blue shade for section headings */
-        }
-        a {
-            color: #0073e6; /* bright blue links */
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            margin-top: 50px;
-            font-size: 0.9em;
-            color: #333333;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reclaim Life Foundation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0 20px;
+      background-color: #87ceeb; /* sky blue */
+      color: #000;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+      border-bottom: 2px solid #0055a5;
+      background-color: #87ceeb; /* keep header sky blue */
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #0055a5;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #0055a5;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .main-content {
+      display: flex;
+      margin-top: 40px;
+      gap: 40px;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: #001f4d; /* navy blue behind both columns */
+      border-radius: 12px;
+      padding: 30px 20px;
+      color: white; /* text white on navy */
+    }
+    .left-column {
+      flex: 1 1 400px;
+    }
+    .headline {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: white;
+    }
+    .description {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      max-width: 500px;
+      color: white;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #0055a5;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 30px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #003366;
+    }
+    .vision-mission {
+      margin-bottom: 40px;
+      color: white;
+    }
+    .two-images {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .two-images img {
+      flex: 1 1 45%;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .support-image {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto 50px auto;
+      border-radius: 12px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Reclaim Life Foundation</h1>
-        <p>Supporting digestive health with heart and hope.</p>
-    </header>
 
-    <section>
-        <h2>Our Mission</h2>
-        <p>To provide support, awareness, and care for individuals living with digestive system conditions.</p>
-    </section>
+<header>
+  <div class="logo">Reclaim Life Foundation</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="ourstory.html">Our Story</a>
+    <a href="whatwedo.html">What We Do</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
 
-    <section>
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:reclaimlife@example.com">reclaimlife@example.com</a></p>
-        <p>Phone: +27 123 456 789</p>
-    </section>
+<div class="main-content">
+  <div class="left-column">
+    <div class="headline">Reclaiming lives, restoring hope, empowering lives beyond digestive health conditions</div>
+    <p class="description">
+      At Reclaim Life Foundation we are dedicated to providing unwavering support to individuals with digestive health conditions. Join us — it is our mission to make a difference.
+    </p>
+    <a href="#" class="btn">Support Us</a>
 
-    <footer>
-        <p>© 2025 Reclaim Life Foundation</p>
-    </footer>
+    <div class="vision-mission">
+      <h3>Vision & Mission</h3>
+      <p>Our vision is to create a world where digestive health challenges are met with compassion, awareness, and support.</p>
+      <p>Our mission is to empower individuals through education, advocacy, and direct assistance.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </div>
+  <div class="right-column">
+    <img src="water-picture.jpg" alt="Water" style="max-width: 100%; border-radius: 12px;" />
+  </div>
+</div>
+
+<div class="two-images">
+  <img src="world-ibd.jpg" alt="World IBD" />
+  <img src="inspirational2.jpg" alt="Inspirational" />
+</div>
+
+<img src="digestive-system.jpg" alt="Digestive System" class="support-image" />
+
 </body>
 </html>
-
-
----
-
-You can copy this code to your index.html on GitHub now!
-
-If you want, I can help with next steps or adding pictures later.
-
