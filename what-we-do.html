@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>What We Do - Reclaim Life Foundation</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #87ceeb; /* sky blue */
+    color: black;
+    margin: 0;
+    line-height: 1.6;
+  }
+  /* Navigation Bar Styles */
+  nav {
+    background-color: #001f4d; /* dark navy */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  nav .logo {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    margin-left: 20px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 6px 10px;
+  }
+  nav ul li a:hover,
+  nav ul li a.active {
+    background-color: #004080;
+    border-radius: 5px;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 30px 20px 20px 20px;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  .section {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 40px 20px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .text-column {
+    flex: 1;
+    padding: 0 20px;
+    min-width: 300px;
+  }
+  .image-column {
+    flex: 1;
+    background-color: #001f4d; /* dark navy */
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+  }
+  .image-column img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  /* Alternate layout: switch image and text for every other section */
+  .section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  /* Breaking stigma subsection styling */
+  .breaking-stigma {
+    margin-left: auto;
+    max-width: 50%;
+  }
+  .breaking-stigma h3 {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+  .breaking-stigma p {
+    font-size: 1em;
+  }
+
+  /* Responsive for smaller screens */
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column !important;
+      margin: 0 10px 30px 10px;
+    }
+    .image-column, .text-column {
+      min-width: 100%;
+      padding: 10px 0;
+    }
+    nav ul li {
+      margin-left: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">Reclaim Life Foundation</a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">Our Story</a></li>
+    <li><a href="what-we-do.html" class="active">What We Do</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</nav>
+
+<h1>Our Programs</h1>
+
+<!-- Medical Care -->
+<div class="section">
+  <div class="text-column">
+    <h2>Medical Care</h2>
+    <p>Our medical care programs are dedicated to providing essential supplies such as feeding tubes, colostomy bags or stoma bags and more, medical assistance and support to individuals with digestive health conditions who are in urgent need of immediate assistance.</p>
+  </div>
+  <div class="image-column">
+    <img src="mrcstoma.jpg" alt="Medical Care Stoma Supplies" />
+  </div>
+</div>
+
+<!-- Emotional and Mental Support -->
+<div class="section">
+  <div class="text-column">
+    <h2>Emotional and Mental Support</h2>
+    <p>The emotional and mental support focuses on long-term efforts to provide counseling, therapy, and support groups to help individuals cope with the challenges of living with digestive health conditions. We create a safe space where patients can share their experiences, accept and embrace change. We believe acceptance is key to all changes.</p>
+  </div>
+  <div class="image-column">
+    <img src="hands-picture.jpg" alt="Emotional Support Hands" />
+  </div>
+</div>
+
+<!-- Awareness and Education -->
+<div class="section">
+  <div class="text-column">
+    <h2>Awareness and Education</h2>
+    <p>Raising awareness and educating the public about digestive health conditions is at the core of our work. We plan to collaborate with local communities, healthcare professionals, and educators to empower individuals to take an active role in managing their health. Raising awareness is crucial for early detection, treatment, and prevention.</p>
+  </div>
+  <div class="image-column">
+    <img src="digestive-education.jpg" alt="Digestive Education" />
+  </div>
+</div>
+
+<!-- Breaking the Stigma -->
+<div class="section">
+  <div class="image-column">
+    <img src="inspirational1.jpg" alt="Breaking the Stigma" />
+  </div>
+  <div class="text-column breaking-stigma">
+    <h3>Breaking the Stigma</h3>
+    <p>We aim to break the stigma surrounding digestive health conditions. These conditions are life-altering, often stigmatized, and financially draining. Through open conversation, education, and visibility, we empower individuals to live boldly and without shame.</p>
+  </div>
+</div>
+
+<!-- Donation and Support -->
+<div class="section">
+  <div class="text-column">
+    <h2>Donation and Support</h2>
+    <p>Our donation and support initiatives are essential to sustain our efforts in providing vital assistance to individuals with digestive health conditions. Your contributions enable us to continue offering medical care, emotional support, and educational resources to those in need.</p>
+  </div>
+  <div class="image-column">
+    <img src="stoma-picture.jpg" alt="Donation Support" />
+  </div>
+</div>
+
+</body>
+</html>
